@@ -20,6 +20,7 @@ echo "                    	  Coded By Riccardo Papa"
 echo "            	  Want to support me?  paypal.me/ricky2006 "
 echo "                            ENJOY YOUR TOOLS"
 echo " Installing..."
+cd
 mkdir Tools
 cd Tools
 mkdir Information-Gathering
