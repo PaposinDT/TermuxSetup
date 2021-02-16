@@ -48,7 +48,6 @@ git clone https://github.com/rajkumardusad/IP-Tracer.git
 # Downloading osi.ig
 git clone https://github.com/th3unkn0n/osi.ig.git
 # Downloading TeleGram-Scraper
-apt install git curl -y
 git clone https://github.com/th3unkn0n/TeleGram-Scraper.git
 pip install lolcat
 # Downloading ipdrone
