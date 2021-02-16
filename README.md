@@ -10,6 +10,8 @@ This is a tool that divides by folders: Tool and Hacking and in each of them oth
 
 * git 
 
+*python
+
 # How to use?
 
 
@@ -17,7 +19,7 @@ This is a tool that divides by folders: Tool and Hacking and in each of them oth
 
 $ pkg update && pkg upgrade
 
-$ pkg install git apt
+$ pkg install git apt python
 
 $ git clone https://github.com/PaposinDT/TermuxSetup.git
 
