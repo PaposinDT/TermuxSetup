@@ -110,7 +110,6 @@ echo "INSTALLING PHISHING TOOLS"
 cd Phishing
 # Downloading zphisher
 git clone git://github.com/htr-tech/zphisher.git
-apt update
 # Downloading nexphisher
 git clone git://github.com/htr-tech/nexphisher.git
 # Downloading maskphish
