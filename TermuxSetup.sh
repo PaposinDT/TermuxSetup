@@ -103,7 +103,6 @@ git clone https://github.com/dark-player/igbrute
 mkdir DDOS
 cd DDOS
 echo "INSTALLING DDOS TOOLS"
-cd DDOS
 # Downloading Impulse
 git clone https://github.com/LimerBoy/Impulse
 # Downloading XERXES
@@ -115,6 +114,8 @@ git clone https://github.com/Bhai4You/Ip-Attack
 #
 #
 #
+cd ~
+cd Hacking
 mkdir Phishing
 echo "INSTALLING PHISHING TOOLS"
 cd Phishing
