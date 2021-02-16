@@ -13,16 +13,13 @@ echo """
 		|        Git Hub :- github.com/PaposinDT     |
                 |        Instagram:- https://cutt.us/2ZDRu   |
 		|___________________________________________ | """
-sleep 3
-
+#
 echo "                           	Version 1.1" 
 echo "                    	  Coded By Riccardo Papa"
 echo "            	  Want to support me?  paypal.me/ricky2006 "
-sleep 1
 echo "			This tool is created for educational purpose only!
  				We use it to test under NDA agreements with clients and their consents
   				and we never encourage to misuse or take responsibility for any damage caused !"
-sleep 6
 echo " Installing..."
 mkdir Tools
 mkdir Hacking
