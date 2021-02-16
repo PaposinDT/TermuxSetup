@@ -34,7 +34,6 @@ cd ..
 echo "INSTALLING GENERIC TOOLS"
 cd Tools
 apt update
-apt install git
 echo "Downloading Tool-x"
 git clone https://github.com/rajkumardusad/Tool-X.git
 cd Tool-X
@@ -62,7 +61,7 @@ cd ..
 echo "Downloading osi.ig"
 git clone https://github.com/th3unkn0n/osi.ig.git
 echo "Downloading TeleGram-Scraper"
-apt install git curl -y
+apt install curl -y
 git clone https://github.com/th3unkn0n/TeleGram-Scraper.git
 pip install lolcat
 echo "Downloading ipdrone"
@@ -74,7 +73,6 @@ cd
 #
 cd Hacking
 echo "INSTALLING HACKING TOOL"
-pkg install git
 pkg install python
 echo "Downloading hacktronian"
 git clone https://github.com/thehackingsage/hacktronian.git
@@ -93,7 +91,7 @@ chmod +x install.sh
 cd ..
 pkg update
 echo "Downloading onex"
-pkg install python3 python3-pip git -y
+pkg install python3 python3-pip -y
 git clone https://github.com/rajkumardusad/onex.git
 cd onex
 chmod +x onex
@@ -104,7 +102,6 @@ apt-get update -y
 apt-get upgrade -y
 pkg install python -y
 pkg install python2 -y
-pkg install git -y
 pip install lolcat
 echo "Downloading infect"
 git clone https://github.com/noob-hackers/infect
@@ -151,7 +148,6 @@ cd Phishing
 echo "Downloading zphisher"
 git clone git://github.com/htr-tech/zphisher.git
 apt update
-apt install git -y
 echo "Downloading nexphisher"
 git clone git://github.com/htr-tech/nexphisher.git
 echo "Downloading maskphish"
