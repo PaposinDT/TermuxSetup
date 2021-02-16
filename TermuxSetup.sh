@@ -25,14 +25,11 @@ echo "			This tool is created for educational purpose only!
 sleep 6
 echo " Installing..."
 mkdir Tools
+mkdir Hacking
 cd Tools
 mkdir Information-Gathering
 echo "INSTALLING GENERIC TOOLS"
 cd Tools
-apt update
-# Downloading Tool-x
-git clone https://github.com/rajkumardusad/Tool-X.git 
-pkg install python -y 
 # Downloading TBomb
 git clone https://github.com/TheSpeedX/TBomb.git
 # Downloading unfollow-plus
@@ -61,7 +58,6 @@ cd ~
 #
 #
 #
-mkdir Hacking
 cd Hacking
 echo "INSTALLING HACKING TOOL"
 pkg install git
@@ -79,12 +75,6 @@ pkg install python3 python3-pip git -y
 git clone https://github.com/rajkumardusad/onex.git
 # Downloading hackerpro
 git clone https://github.com/jaykali/hackerpro.git
-apt-get update -y
-apt-get upgrade -y
-pkg install python -y
-pkg install python2 -y
-pkg install git -y
-pip install lolcat
 # Downloading infect
 git clone https://github.com/noob-hackers/infect
 # Downloading SocialBox-Termux
