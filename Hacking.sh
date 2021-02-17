@@ -1,6 +1,6 @@
 echo "INSTALLING HACKING TOOL"
 mkdir Hacking
-sudo bash Phishing.sh
+bash Phishing.sh
 cd Hacking
 git clone https://github.com/thehackingsage/hacktronian.git
 git clone https://github.com/noob-hackers/ighack
