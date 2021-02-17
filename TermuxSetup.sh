@@ -1,7 +1,9 @@
 #!/bin/bash
-# Version 1.2
-# coded By Riccardo Papa
-# copyright(please read the license before sharing the code)
+#Title........: KaliSetup.sh
+#Description..: This is a multi-use bash script for Linux systems to automate best hacking tools installation.
+#Author.......: Riccardo Papa
+#Version......: 1.4
+#Usage........: sudo bash Kalisetup.sh
 clear
 echo """
 		 ____________________________________________
