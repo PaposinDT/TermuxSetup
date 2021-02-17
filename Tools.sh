@@ -1,6 +1,6 @@
 echo "INSTALLING INFORMATION-GATHERING TOOLS"
 mkdir Tools
-sudo bash Hacking.sh
+bash Hacking.sh
 cd Tools
 git clone https://github.com/rajkumardusad/Tool-X.git
 git clone https://github.com/TheSpeedX/TBomb.git
