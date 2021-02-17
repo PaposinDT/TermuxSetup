@@ -1,6 +1,6 @@
 echo "INSTALLING PHISHING TOOLS"
 mkdir Phishing
-sudo bash Information-Gathering.sh
+bash Information-Gathering.sh
 cd Phishing
 git clone git://github.com/htr-tech/zphisher.git
 git clone git://github.com/htr-tech/nexphisher.git
