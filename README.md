@@ -10,7 +10,7 @@ This is a tool that divides by folders: Tool and Hacking and in each of them oth
 
 * git 
 
-*python
+* python
 
 # How to use?
 
