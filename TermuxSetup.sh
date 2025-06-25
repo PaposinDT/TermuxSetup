@@ -71,16 +71,21 @@ clone_if_exists "https://github.com/htr-tech/bash2mp4"                 "bash2mp4
 sleep 2
 echo
 echo "✅ INSTALLATION COMPLETED."
+sleep 1
+cd ..
 echo "Removing unnecessary files."
-rm -rf Hacking.sh
-rm -rf LICENSE
-rm -rf README.md
-rm -rf TermuxSetup.sh
-rm -rf Phishing.sh
-rm -rf Information-Gathering.sh
-rm -rf DDoS.sh
-echo "Renaming Folder."
+sleep 1
+rm -r Hacking.sh
+rm -r LICENSE
+rm -r README.md
+rm -r TermuxSetup.sh
+rm -r Phishing.sh
+rm -r Information-Gathering.sh
+rm -r DDoS.sh
+sleep 1
+echo "Renaming Folder into "Ethical-Hacking"."
 cd ..
 mv TermuxSetup Ethical-Hacking
+sleep 1
 echo "🌟 If you like the script, please leave a star on the GitHub repo!"
 
