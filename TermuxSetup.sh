@@ -1,7 +1,8 @@
-#Author.......: Riccardo Papa
-#Version......: 2.6
-#Usage........: sudo ./TermuxSetup.sh
-# copyright(please read the license before sharing the code)
+#!/bin/bash
+# Author.......: Riccardo Papa
+# Version......: 2.6
+# Usage........: bash TermuxSetup.sh
+
 clear
 echo """
 			 ____________________________________________
@@ -12,47 +13,63 @@ echo """
 			|        Youtube :-  https://cutt.us/fp49D   |
 			|        Git Hub :- github.com/PaposinDT     |
             		|        Instagram:- https://cutt.us/2ZDRu   |
-			|___________________________________________ | """
+			|___________________________________________ |
+"""
+
 sleep 2
-echo "					Version 1.1
+echo "					Version 2.6
                     	 	 Coded By Riccardo Papa
-           	 	Want to support me?  paypal.me/ricky2006" \  #
-#
+           	 	Want to support me?  paypal.me/ricky2006"
 sleep 1
-echo "This is a little installation for termux, you can find the full project here: https://github.com/PaposinDT/KaliSetup" \  #
-#
+
+echo "This is a little installation for Termux.
+You can find the full project here:
+▶ https://github.com/PaposinDT/KaliSetup"
 sleep 2
-echo "This tool is created for educational purpose only!" \  #
-#
-echo 
+
+echo "⚠️  This tool is created for educational purposes only!"
 sleep 1
-echo "The installation speed depends on the signal strength."
-echo 
+
+echo "📡 Installation speed depends on your internet signal"
 sleep 1
-echo "The installation process could take up to 3 minutes"
-echo
+echo "⏳ This process might take up to 3 minutes"
 sleep 1
-echo "Installing..."
-echo
+echo -e "\n🔧 Installing...\n"
 sleep 1
-mkdir ./Tools
+
+# Funzione per clonare solo se esiste
+clone_if_exists() {
+  local url="$1"
+  local name="$2"
+  local bar="$3"
+
+  echo "Cloning $name: $bar"
+  if curl --head --silent --fail "${url%.git}" > /dev/null; then
+    git clone "$url" --quiet
+  else
+    echo "❌ Repo $name non trovata o rimossa, salto."
+  fi
+}
+
+# Esegui script hacking
+mkdir -p ./Tools
 ./Hacking.sh
 cd ./Tools
+
 echo
-echo "INSTALLING GENERIC TOOLS"
+echo "🛠️  INSTALLING GENERIC TOOLS"
 sleep 2
 echo "Cloning 5 repositories"
+sleep 2
+
+clone_if_exists "https://github.com/rajkumardusad/Tool-X.git"           "Tool-X"           "|-|-|-|-|-|"
+clone_if_exists "https://github.com/TheSpeedX/TBomb.git"               "TBomb"            "|-|-|-|-|"
+clone_if_exists "git://github.com/htr-tech/unfollow-plus.git"          "unfollow-plus"    "|-|-|-|"
+clone_if_exists "https://github.com/Nikait/ni_bomber"                  "ni_bomber"        "|-|-|"
+clone_if_exists "https://github.com/htr-tech/bash2mp4"                 "bash2mp4"         "|-|"
+
+sleep 2
 echo
-sleep 2
-echo "Cloning Tool-X:                    |-|-|-|-|-|"
-git clone https://github.com/rajkumardusad/Tool-X.git --quiet
-echo "Cloning TBomb:   	           |-|-|-|-|"
-git clone https://github.com/TheSpeedX/TBomb.git --quiet
-echo "Cloning unfollow-plus:             |-|-|-|" 
-git clone git://github.com/htr-tech/unfollow-plus.git --quiet
-echo "Cloning ni_bomber:                 |-|-|"
-git clone https://github.com/Nikait/ni_bomber --quiet
-echo "Cloning bash2mp4:  	           |-|"
-git clone https://github.com/htr-tech/bash2mp4 --quiet
-sleep 2
-echo "INSTALLATION COMPLETED. IF YOU LIKE THE SCRIPT, PLEASE LEAVE A STAR ON THE GITHUB REPOSITORY!"
+echo "✅ INSTALLATION COMPLETED."
+echo "🌟 If you like the script, please leave a star on the GitHub repo!"
+
